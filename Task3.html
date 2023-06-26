@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+        
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ body { display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6 ,#9b59b6);
+}
+form
+{ 
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 47px;
+    border-radius:6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}
+h4
+{
+    text-align: center;
+    font-size: 20px;
+    
+  
+
+}
+
+hr
+{
+    margin: 10px 0;
+    background-color: #ccc;
+    border:0;
+    height: 1px;
+    width: 100%;
+}
+.name-field
+{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+
+}
+.name-field div
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.name-field div input
+{
+  width: 95%;
+}
+label
+{
+    margin-bottom: 8px;
+
+}
+input{
+    margin-bottom: 9px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+input:focus
+{
+border:1px solid #71b7e6  
+}
+input [type="submit"]
+{
+    margin-top: 15px;
+    background:linear-gradient(135deg, #71b7e6 ,#9b59b6);
+    color: aliceblue;
+    cursor: pointer;
+
+
+}
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <h4>REGISTRATION FORM</h4>
+            <hr>
+            <div class="name-field">
+                <div>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div>
+                    <label >Last Name</label>
+                    <input type="text" placeholder="Enter your Last Name">
+                </div>
+            </div>
+            <label >Email</label>
+                    <input type="email" placeholder="Enter your Email">
+                    <label >Phone number</label>
+                    <input type="tel" placeholder="Enter your phone number">
+                    <label >Password</label>
+                    <input type="password" placeholder="Enter your Password">
+                    <label >Confirm your Password</label>
+                    <input type="password" placeholder="Confirm your Password">
+                    <input type="submit" value="submit">
+                   
+        </form>
+    </body>
+
+</html>
